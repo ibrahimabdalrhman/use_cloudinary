@@ -3,7 +3,7 @@ const cloudinary = require('../utils/cloudinary');
 
 exports.createProduct = async (req, res) => {
   try {
-    console.log(req.files.image.buffer);
+    console.log(req.files.image);
     const { name } = req.body;
     if (req.files.image) {
       const image = req.files.image

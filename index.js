@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(
   fileUpload({
-    useTempFiles: true,
+    useTempFiles: true, // Set to false to avoid creating temporary files
     limits: { fileSize: 50 * 1024 * 1024 },
   })
 );
